@@ -39,14 +39,14 @@
 
 ---
 
-### Week 4, 5 Mar: More audiovisual sketches
+### Week 4, 5 Mar: Programming techniques
+![](https://github.com/ual-cci/cp-sip/raw/master/images/week04_sketches.png)
 #### Lab
 - Programming techiques for drawing
   - Trails
   - Repetition
   - Infinite loops
   - Sequencing
-- Audiovisual sketches in p5
 
 ---
 

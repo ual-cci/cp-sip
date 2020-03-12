@@ -50,7 +50,8 @@
 
 ---
 
-### Week 5, 11 Mar: Generative images & animations
+### Week 5, 12 Mar: Generative images & animations
+**Test** on trigonometric drawing
 #### Lecture
 - Trigonometry in 2D
 - Conways game of life
@@ -63,7 +64,8 @@
 
 ---
 
-### Week 6, 15 April:
+### Week 6, 16 April:
+**Test** on generative images using pixels
 #### Lecture
 - Filtering introduction
 
@@ -74,13 +76,13 @@
 
 ---
 
-### Week 7, 22 April:
+### Week 7, 23 April:
 #### Lab
 - Image analysis & alternative image representation
 
 ---
 
-### Week 8, 29 April:
+### Week 8, 30 April:
 #### Lecture
 - Convolution and kernels
 
@@ -92,7 +94,8 @@
 
 ---
 
-### Week 9, May:
+### Week 9, 7 May:
+**Test** on filtering & convolution
 #### Lecture
 - Recursion
 
@@ -101,7 +104,7 @@
 
 ---
 
-### Week 10, 13 May
+### Week 10, 14 May
 #### Lecture
 - L-systems
 - Rewrite rules
@@ -111,7 +114,8 @@
 
 ---
 
-### Week 11, 20 May:
+### Week 11, 21 May:
+**Test** on recursion & L-systems
 #### Lecture
 - Particle systems
 #### Lab
@@ -119,7 +123,7 @@
 
 ---
 
-### Week 12, 27 May:
+### Week 12, 28 May:
 #### Lecture
 - Agent based models
 #### Lab
@@ -128,7 +132,8 @@
 
 ---
 
-### Week 13, 3 June
+### Week 13, 4 June
+**Test** on simulation
 ### Lab
 - More flocking & programming techniques
 

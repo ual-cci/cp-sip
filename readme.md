@@ -53,8 +53,7 @@
 ### Week 5, 12 Mar: Generative images & animations
 **Test** on trigonometric drawing
 #### Lecture
-- Trigonometry in 2D
-- Conways game of life
+- `git` fundamentals
 
 #### Lab
 - Using `git`

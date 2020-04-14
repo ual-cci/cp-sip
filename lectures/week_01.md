@@ -1,6 +1,7 @@
 ## Computational Practices: Sound and Image Processing
 
-Will Gallia `w.gallia@arts.ac.uk`  
+Will Gallia `w.gallia@arts.ac.uk`
+
 Thursdays, 13:30 to 17:30, B501-03
 
 ---

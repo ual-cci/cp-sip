@@ -212,6 +212,36 @@ What way would you use?
 
 ---
 
+## Watch out!
+
+Remember if you start with an image and you want to repeatedly do something to it, but always start from the original, you need to make a copy of it before you alter it.
+
+We came across this last session when doing Conway's Game of Life (RIP John Conway, a victim of Covid-19)
+
+An easy way to make a copy of an array in Javascript is using the `slice()` function, like:
+
+```js
+let imPixelsCopy
+
+function setup() {
+	imgPixelsCopy = img.pixels.slice()
+}
+
+function draw() {
+	// e.g.
+	img.pixels[0] = imgPixelsCopy[0] / mouseX
+
+	//...
+}
+```
+
+In a nutshell:
+
+* Read from the copy: `imgPixelsCopy`
+* Write to the original: `img.pixels`
+
+---
+
 ## Moving to video
 
 Video is just a sequence of images, so we can apply these same techniques to it.

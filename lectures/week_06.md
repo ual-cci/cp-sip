@@ -156,15 +156,6 @@ function setup() {
 
 ---
 
-## Going grayscale
-
-Can you use `filter()` in p5 to make your image grayscale?
-
-Using the same template from the last slide, can you do this manually?
-
-
----
-
 ## Some JS chops
 
 ```js
@@ -239,6 +230,29 @@ In a nutshell:
 
 * Read from the copy: `imgPixelsCopy`
 * Write to the original: `img.pixels`
+
+---
+
+## Vignettes
+
+Although vignettes aren't technically filters in the classical sense, they are often used with in conjunction with filters.
+
+A vignette reduces the brightness or saturation of an image from a central point.
+
+They generally make photos look more dramatic and more "professional".
+
+### Making a vignette
+
+There are two main steps to putting a vignette on an image:
+
+1. Make a mask
+2. Overlay (multiply) the mask with the image
+
+You can do both these steps in one go, but it might help to think of them separately.
+
+The classic vignette fades out from the centre, so to create your mask you would look at the distance between each pixel and the centre, this would be the value of the mask. But remember, you will need to invert the distance to get a number is greatest at the point and gets smaller as it gets further, i.e. the opposite of distance.
+
+Once you have a mask, you can simply multiply it with the image you want to overlay.
 
 ---
 

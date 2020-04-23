@@ -136,10 +136,10 @@ If we made an `average()` function, our new array could look like:
 
 ```python
 averaged = [
-    average([1, 2, 3]),
-	average([2, 3, 4)],
-	average([3, 4, 5)],
-	average([4, 5, 6)]
+  average([1, 2, 3]),
+  average([2, 3, 4)],
+  average([3, 4, 5)],
+  average([4, 5, 6)]
 ]
 ```
 
@@ -149,12 +149,12 @@ If we need to make sure the array is the same length as it was to begin with we 
 
 ```python
 averaged = [
-	average([1, 2]),
-    average([1, 2, 3]),
-	average([2, 3, 4)],
-	average([3, 4, 5)],
-	average([4, 5, 6)]
-	average([5, 6)]
+  average([1, 2]),
+  average([1, 2, 3]),
+  average([2, 3, 4)],
+  average([3, 4, 5)],
+  average([4, 5, 6)]
+  average([5, 6)]
 ]
 ```
 
@@ -172,13 +172,13 @@ data = [1, 23, 43, 654, -234, 53] # ... some array of samples
 length = len(data)
 window = 4
 for i in range(0, length - window):
-	sum = 0
-	for j in range(window):
-		sum += data[i + j]
+  sum = 0
+  for j in range(window):
+    sum += data[i + j]
 
-	average = int(sum / window)
+  average = int(sum / window)
 
-	data[i] = average
+  data[i] = average
 ```
 
 Let's step through it:
@@ -203,20 +203,20 @@ for i in range(0, length - window):
 Setup a for loop to go from 0 to the end minus the window size. This is so we don't go off the end of the array.
 
 ```python
-	sum = 0
-	for j in range(window):
-		sum += data[i + j]
+  sum = 0
+  for j in range(window):
+    sum += data[i + j]
 ```
 
 This is the main bit! Make a variable to start at 0 to keep track of the sum. Then make a loop for the window. Then add the sample at each point in the window. The current sample is the one at `i` and the one in the window is `i + j`.
 
 ```python
-	average = int(sum / window)
+  average = int(sum / window)
 
-	data[i] = average
+  data[i] = average
 ```
 
-Finally, calculate the average and store it back in the array
+Finally, calculate the average and store it back in the array.
 
 
 ---
@@ -284,24 +284,24 @@ let radius = floor(windowSize / 2)
 for (let y = 0; y < height; y++) {
   for (let x = 0; x < width; x++) {
     // for each pixel
-	let sum = 0
-	let count = 0
-	for (let j = -radius; j <= radius; j++) {
-	  for (let i = -radius; i < radius; i++) {
-	    let px = x + i
-		let py = y + j
-		if (px >= 0 && px < width && py >= 0 && py < height) {
-	      sum += pixels[(px + py * width) * 4]
-		  count += 1
-		}
-	  }
-	}
-	let average = sum / count
+    let sum = 0
+    let count = 0
+    for (let j = -radius; j <= radius; j++) {
+      for (let i = -radius; i < radius; i++) {
+        let px = x + i
+        let py = y + j
+        if (px >= 0 && px < width && py >= 0 && py < height) {
+          sum += pixels[(px + py * width) * 4]
+          count += 1
+        }
+      }
+    }
+    let average = sum / count
 
-	let index = (x + y * width) * 4
-	pixels[index] = average
-	pixels[index + 1] = average
-	pixels[index + 2] = average
+    let index = (x + y * width) * 4
+    pixels[index] = average
+    pixels[index + 1] = average
+    pixels[index + 2] = average
   }
 }
 ```
@@ -320,8 +320,8 @@ We create some variables for the window size. It only makes sense to have a wind
 for (let y = 0; y < height; y++) {
   for (let x = 0; x < width; x++) {
     // for each pixel
-	let sum = 0
-	let count = 0
+    let sum = 0
+    let count = 0
 ```
 
 This is our first nested loop to iterate though each pixel in the image (or our canvas in this case). `x` and `y` refer to the position of the pixel we're going to write to, let's call this the target pixel.
@@ -329,34 +329,34 @@ This is our first nested loop to iterate though each pixel in the image (or our 
 It's at this point that we create two variables. One to hold the sum of the pixels as we move through and another to keep track of how many we have counted.
 
 ```js
-	for (let j = -radius; j <= radius; j++) {
-	  for (let i = -radius; i < radius; i++) {
-	    let px = x + i
-		let py = y + j
+    for (let j = -radius; j <= radius; j++) {
+      for (let i = -radius; i < radius; i++) {
+        let px = x + i
+        let py = y + j
 ```
 
 Next comes our second nested loop. This goes through all the neighbouring pixels. Notice the for loops go from `-radius` to, and including `radius`. We then make two variables to get the pixel coordinate of the pixel we're going to read from'
 
 ```js
-		if (px >= 0 && px < width && py >= 0 && py < height) {
+        if (px >= 0 && px < width && py >= 0 && py < height) {
 ```
 
 Then we check to see if this pixel is inside our image
 
 ```js
-	      sum += pixels[(px + py * width) * 4]
-		  count += 1
+        sum += pixels[(px + py * width) * 4]
+        count += 1
 ```
 
 Then we add the pixel value to the sum and increase the count by 1. Here I'm just reading the red channel of the image, because I'm presuming the image is grayscale (so all channels will be the same).
 
 ```js
-	let average = sum / count
+  let average = sum / count
 
-	let index = (x + y * width) * 4
-	pixels[index] = average
-	pixels[index + 1] = average
-	pixels[index + 2] = average
+  let index = (x + y * width) * 4
+  pixels[index] = average
+  pixels[index + 1] = average
+  pixels[index + 2] = average
   }
 }
 ```
@@ -364,6 +364,12 @@ Then we add the pixel value to the sum and increase the count by 1. Here I'm jus
 Finally, I calculate the sum and write that result to all channels of the target pixel.
 
 You can find a full sketch of the above in the `sketches` folder of the GitHub repository.
+
+---
+
+## Averaging as a LPF
+
+A moving average is a bad low pass filter. It doesn't just remove high frequencies, it also alters the signal in an unwanted way. Can you think of what this is?
 
 ---
 

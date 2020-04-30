@@ -174,25 +174,44 @@ The result looks like:
 
 Bright parts of the image how where the edges are. Specifically, this is points where the neighbouring pixels are different from each other.
 
-This filter is an example of a *high pass filter* it's showing you where quick changes are.
+This is an example of a high pass filter in an image. Pixels that have a big difference with the neighbouring pixels are increased, while pixels that are similar to their neighbours are decreased.
 
 ---
 
-## Messing around
+## Sharpen
 
-I personally quite like it when you invert all the sign of the values of the edge detection kernel, so:
+Another interesting kernel is the the sharpen kernel:
 
 ```js
-let inverseEdge = [
-  [1,  1, 1],
-  [1, -8, 1],
-  [1,  1, 1]
+let sharpen = [
+  [0, -1, 0],
+  [-1, 5, -1],
+  [0, -1, 0]
 ]
 ```
 
-That looks like:
+Which looks like this:
 
-![](https://github.com/ual-cci/cp-sip/raw/master/images/ripples-edges-inv.jpg)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/ripples-sharpen.jpg)
+
+---
+
+## Blur
+
+You can also produce a blur via averaging with convolution. The kernel looks like:
+
+```js
+let e = 1 / 9
+kernel = [
+  [e, e, e],
+  [e, e, e],
+  [e, e, e]
+]
+```
+
+![](https://github.com/ual-cci/cp-sip/raw/master/images/ripples-blur.jpg)
+
+Can you see why this produces an average?
 
 ---
 

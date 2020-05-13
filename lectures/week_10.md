@@ -31,44 +31,44 @@ Say our algae is composed of two elements:
 
 and, **B** which looks like a blue-ish circle:
 
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-b.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-b.png)
 
 Lindenmayer found that as the algae grew, A became A & B and B became A.
 
 Visually:
 
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-a-ab.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-a-ab.png)
 
 and
 
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-b-a.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-b-a.png)
 
 Finally, he said that the starting point for is A.
 
 Here is what this model of growth might look like:
 
 #### Step 0
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-0.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-0.png)
 #### Step 1
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-1.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-1.png)
 #### Step 2
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-2.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-2.png)
 #### Step 3
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-3.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-3.png)
 #### Step 4
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-4.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-4.png)
 #### Step 5
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-5.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-5.png)
 #### Step 6
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-6.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-6.png)
 #### Step 7
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-7.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-7.png)
 #### Step 8
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-8.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-8.png)
 #### Step 9
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-9.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-9.png)
 #### Step 10
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-10.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-10.png)
 
 
 As you can see there is a recursive nature to this. We use the output of one step as the input the next step.
@@ -86,9 +86,11 @@ So there are three elements that define our system, we have:
 People like to describe these succintly, so the above system can be described as:
 
 **alphabet**: A, B
+
 **rules**:
 * A → AB
 * B → A
+
 **axiom**: A
 
 That's it, what a neat way to describe a system!
@@ -101,7 +103,7 @@ It's nice to see things visually, but how do we implement this?
 
 We treat the state of the system as a *string*. So, the state
 
-![](https://github.com/ual-cci/cp-sip/raw/master/images/algea-3.png)
+![](https://github.com/ual-cci/cp-sip/raw/master/images/algae-3.png)
 
 could be represented as
 

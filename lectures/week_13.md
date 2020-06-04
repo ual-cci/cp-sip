@@ -69,7 +69,7 @@ This is the pretty much the opposite to separation. The idea is that we want our
 
 To have some cohesion we try to move a boid to the average point of itself and it's neighbours.
 
-![](https://en.wikipedia.org/wiki/Boids#/media/File:Rule_cohesion.gif)
+![](https://upload.wikimedia.org/wikipedia/commons/2/2b/Rule_cohesion.gif)
 
 ---
 
@@ -79,7 +79,7 @@ This is quite different to the other two rules. Whereas separation and cohesion 
 
 I idea here is that we want the flock to move in a **common direction**.
 
-![](https://en.wikipedia.org/wiki/Boids#/media/File:Rule_alignment.gif)
+![](https://upload.wikimedia.org/wikipedia/commons/e/e1/Rule_alignment.gif)
 
 ---
 
@@ -354,6 +354,8 @@ function draw() {
 #### Average positions
 
 Here's a sample sketch that illustrates where the average point of a group of points inside a radius of influence.
+
+![](https://github.com/ual-cci/cp-sip/raw/master/images/points-average.png)
 
 You can create point at the mouse position when you press a key and you can also drag points.
 

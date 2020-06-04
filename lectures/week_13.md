@@ -237,7 +237,7 @@ class Boid {
       sum.normalize()
       sum.mult(this.maxSpeed)
       let steer = p5.Vector.sub(sum, this.velocity)
-      steer.limit(this.maxforce)
+      steer.limit(this.maxForce)
       return steer
     } else {
       return createVector(0, 0)

@@ -77,7 +77,7 @@ To have some cohesion we try to move a boid to the average point of itself and i
 
 This is quite different to the other two rules. Whereas separation and cohesion are based on position, alignment is about a boid's velocity.
 
-I idea here is that we want the flock to move in a **common direction**.
+The idea here is that we want the flock to move in a **common direction**.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/e/e1/Rule_alignment.gif)
 
@@ -85,7 +85,7 @@ I idea here is that we want the flock to move in a **common direction**.
 
 ### Implementation
 
-Daniel Shiffman's excellent book The Nature of Code, has a great [https://natureofcode.com/book/chapter-6-autonomous-agents/](chapter on flocking).
+Daniel Shiffman's excellent book The Nature of Code, has a great [chapter on flocking](https://natureofcode.com/book/chapter-6-autonomous-agents/).
 
 The code in his examples are written in Processing so the syntax is slightly different than p5, but the concepts described in the book are done so very well.
 
